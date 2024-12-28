@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainHomePage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage"
+    >
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/splash"
+        android:fitsSystemWindows="true"
+        >
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Festival Post"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:letterSpacing=".3"
+            android:textStyle="bold"/>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <FrameLayout
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/searchbutton"
+        android:layout_gravity="center"
+        >
+
+    <LinearLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:src="@drawable/search"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="15dp"
+            android:hint="Search"/>
+
+    </LinearLayout>
+    </FrameLayout>
+
+    <!--Upcoming Festival-->
+        <TextView
+        android:id="@+id/upcomingFestival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upcoming Festival"
+        android:layout_below="@id/searchBar"
+        android:textSize="22sp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"/>
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/upcomingFestival"
+        android:layout_marginTop="15dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/festival1"
+                android:orientation="horizontal"
+                android:background="@drawable/image1"/>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/festival2"
+                android:orientation="horizontal"
+                android:background="@drawable/image3"/>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/festival3"
+                android:orientation="horizontal"
+                android:background="@drawable/image4"/>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/festival4"
+                android:orientation="horizontal"
+                android:background="@drawable/image2"/>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/festival5"
+                android:orientation="horizontal"
+                android:background="@drawable/image5"/>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!--Upcoming Days-->
+    <TextView
+        android:id="@+id/upcomingDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upcoming Days"
+        android:layout_below="@id/scrollView1"
+        android:textSize="22sp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"/>
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/upcomingDays"
+        android:layout_marginTop="15dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/day1"
+                android:orientation="horizontal"
+                android:background="@drawable/day1"/>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/day2"
+                android:orientation="horizontal"
+                android:background="@drawable/day2"/>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/day3"
+                android:orientation="horizontal"
+                android:background="@drawable/day3"/>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/day4"
+                android:orientation="horizontal"
+                android:background="@drawable/day4"/>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/day5"
+                android:orientation="horizontal"
+                android:background="@drawable/day5"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!--General-->
+    <TextView
+        android:id="@+id/general"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="General"
+        android:layout_below="@id/scrollView2"
+        android:textSize="22sp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"/>
+    <HorizontalScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/general"
+        android:layout_marginTop="15dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/pic1"
+                android:orientation="horizontal"
+                android:background="@drawable/day1"/>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/pic2"
+                android:orientation="horizontal"
+                android:background="@drawable/pic2"/>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/pic3"
+                android:orientation="horizontal"
+                android:background="@drawable/pic3"/>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/pic4"
+                android:orientation="horizontal"
+                android:background="@drawable/pic4"/>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/pic5"
+                android:orientation="horizontal"
+                android:background="@drawable/pic5"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+
+</RelativeLayout>

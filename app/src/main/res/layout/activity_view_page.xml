@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainViewPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewPage"
+    >
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/splash"
+
+        >
+     <ImageButton
+         android:id="@+id/backButton"
+         android:layout_width="30dp"
+         android:layout_height="50dp"
+         android:background="@color/splash"
+         android:src="@drawable/backarrow"
+         />
+
+    <TextView
+        android:id="@+id/titleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Festival Post"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:letterSpacing=".3"
+        android:textStyle="bold"/>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:id="@+id/post"
+    android:layout_marginHorizontal="20dp"
+    android:layout_below="@id/toolbar"
+    android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/suggestPost"
+        android:layout_below="@id/post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suggest a Post"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textColor="@color/black"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingButton_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/download"
+        app:tint="@color/splash"
+        android:background="@color/white"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="Download"
+        />
+
+    </LinearLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dividerThickness="2dp"
+        app:dividerColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/suggestPost"
+        />
+
+    <LinearLayout
+        android:id="@+id/extraPost1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/divider1">
+
+    <LinearLayout
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_margin="10dp"
+        android:id="@+id/festival1"
+        android:orientation="horizontal"
+        android:background="@drawable/image1"/>
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:id="@+id/festival2"
+        android:orientation="horizontal"
+        android:background="@drawable/pic4"/>
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:id="@+id/festival3"
+        android:orientation="horizontal"
+        android:background="@drawable/pic1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/extraPost2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/extraPost1">
+
+        <LinearLayout
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_margin="10dp"
+            android:id="@+id/festival4"
+            android:orientation="horizontal"
+            android:background="@drawable/day3"/>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:id="@+id/festival5"
+            android:orientation="horizontal"
+            android:background="@drawable/image5"/>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:id="@+id/festival6"
+            android:orientation="horizontal"
+            android:background="@drawable/day1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/extraPost3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/extraPost2">
+
+        <LinearLayout
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_margin="10dp"
+            android:id="@+id/festival7"
+            android:orientation="horizontal"
+            android:background="@drawable/day5"/>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:id="@+id/festival8"
+            android:orientation="horizontal"
+            android:background="@drawable/image3"/>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:id="@+id/festival9"
+            android:orientation="horizontal"
+            android:background="@drawable/day2"/>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
